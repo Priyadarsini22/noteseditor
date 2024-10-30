@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Theme: Ghibli Studio */
+.theme-ghibli .text-edit-navbar {
+  background-color: #8bc34a;
+  border-bottom: 2px solid #4caf50;
+  color: #fff;
+}
+
+.theme-ghibli .note-editor {
+  border: 2px solid #4caf50;
+}
+
+.theme-ghibli #note-content {
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Theme: Pink */
+.theme-pink .text-edit-navbar {
+  background-color: #e91e63;
+  border-bottom: 2px solid #c2185b;
+  color: #fff;
+}
+
+.theme-pink .note-editor {
+  border: 2px solid #c2185b;
+}
+
+.theme-pink #note-content {
+  background-color: #fce4ec;
+  color: #880e4f;
+}
+
+/* Theme: Cyberpunk */
+.theme-cyberpunk .text-edit-navbar {
+  background-color: #1c1c1c;
+  border-bottom: 2px solid #ff4081;
+  color: #ff4081;
+}
+
+.theme-cyberpunk .note-editor {
+  border: 2px solid #ff4081;
+}
+
+.theme-cyberpunk #note-content {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Theme: Black and White */
+.theme-black-white .text-edit-navbar {
+  background-color: #000;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.theme-black-white .note-editor {
+  border: 2px solid #fff;
+}
+
+.theme-black-white #note-content {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Theme: Dark */
+.theme-dark .text-edit-navbar {
+  background-color: #333;
+  border-bottom: 2px solid #555;
+  color: #fff;
+}
+
+.theme-dark .note-editor {
+  border: 2px solid #555;
+}
+
+.theme-dark #note-content {
+  background-color: #222;
+  color: #ddd;
+}
+
+/* Theme: Light */
+.theme-light .text-edit-navbar {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #ccc;
+  color: #000;
+}
+
+.theme-light .note-editor {
+  border: 2px solid #ccc;
+}
+
+.theme-light #note-content {
+  background-color: #fff;
+  color: #000;
+}
