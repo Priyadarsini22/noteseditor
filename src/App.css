@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+/* General Styles */
+body {
+  font-family: 'Garamond', serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Common Button Styles */
+button, select {
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Theme: Dark Mode */
+.theme-dark {
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Theme: Light Mode */
+.theme-light {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.App-link {
-  color: #61dafb;
+/* Theme: Ghibli Studio */
+.theme-ghibli .text-edit-navbar {
+  background-color: #8bc34a;
+  border-bottom: 2px solid #4caf50;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theme-ghibli button, .theme-ghibli select {
+  background-color: #8bc34a;
+  border: 2px solid #4caf50;
+  color: #fff;
+}
+
+.theme-ghibli button:hover, .theme-ghibli select:hover {
+  background-color: #7cb342;
+}
+
+.theme-ghibli .note-editor {
+  border: 2px solid #4caf50;
+}
+
+.theme-ghibli #note-content {
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Dark Mode Adjustments for Ghibli */
+.theme-dark.theme-ghibli .text-edit-navbar {
+  background-color: #4a7c2f;
+}
+
+.theme-dark.theme-ghibli #note-content {
+  background-color: #2e3b2d;
+  color: #e0e0e0;
+}
+
+/* Theme: Pink */
+.theme-pink .text-edit-navbar {
+  background-color: #e91e63;
+  border-bottom: 2px solid #c2185b;
+  color: #fff;
+}
+
+.theme-pink button, .theme-pink select {
+  background-color: #e91e63;
+  border: 2px solid #c2185b;
+  color: #fff;
+}
+
+.theme-pink button:hover, .theme-pink select:hover {
+  background-color: #d81b60;
+}
+
+.theme-pink .note-editor {
+  border: 2px solid #c2185b;
+}
+
+.theme-pink #note-content {
+  background-color: #fce4ec;
+  color: #880e4f;
+}
+
+/* Dark Mode Adjustments for Pink */
+.theme-dark.theme-pink .text-edit-navbar {
+  background-color: #b0003a;
+}
+
+.theme-dark.theme-pink #note-content {
+  background-color: #f6b0cc;
+  color: #f8bbd0;
+}
+
+/* Theme: Cyberpunk */
+.theme-cyberpunk .text-edit-navbar {
+  background-color: #1c1c1c;
+  border-bottom: 2px solid #21f0d5;
+  color: #40ffe9;
+}
+
+.theme-cyberpunk button, .theme-cyberpunk select {
+  background-color: #1c1c1c;
+  border: 2px solid #21f0d5;
+  color: #40ffe9;
+}
+
+.theme-cyberpunk button:hover, .theme-cyberpunk select:hover {
+  background-color: #181818;
+}
+
+.theme-cyberpunk .note-editor {
+  border: 2px solid #2df1fe;
+}
+
+.theme-cyberpunk #note-content {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Dark Mode Adjustments for Cyberpunk */
+.theme-dark.theme-cyberpunk .text-edit-navbar {
+  background-color: #000000;
+}
+
+.theme-dark.theme-cyberpunk #note-content {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+}
+
+/* Theme: Black and White */
+.theme-black-white .text-edit-navbar {
+  background-color: #000;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.theme-black-white button, .theme-black-white select {
+  background-color: #000;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.theme-black-white button:hover, .theme-black-white select:hover {
+  background-color: #333;
+}
+
+.theme-black-white .note-editor {
+  border: 2px solid #fff;
+}
+
+.theme-black-white #note-content {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark Mode Adjustments for Black and White */
+.theme-dark.theme-black-white .text-edit-navbar {
+  background-color: #1a1a1a;
+}
+
+.theme-dark.theme-black-white #note-content {
+  background-color: #333;
+  color: #fff;
 }
